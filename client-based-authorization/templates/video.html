@@ -1,0 +1,15 @@
+{% include "base.html" %}
+{% block head %}
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <ul class="list-unstyled">
+    <li><h2>{{ video.title }}</h2><p>{{ video.description }}</p>
+  </ul>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "{{ play_url }}", parentId: "#player"});
+  </script>
+ </div>
+{% endblock %}

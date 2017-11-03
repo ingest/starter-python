@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Ingest example application!</h2>
+            <p>This is a starter Python-Flask application using Ingest's API as a user. It utilizes Authorization Code Grant flow.</p>
+            {% if not session.logged_in %}
+            <a class="btn btn-primary" href="{{ url_for('login') }}" role="button">Login with your Ingest account </a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

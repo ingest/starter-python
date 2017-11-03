@@ -1,0 +1,17 @@
+{% include "base.html" %}
+{% block body %}
+<div class="container">
+    {% for video in videos %}
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+            <h2><a href="{{ url_for('show_video', id=video.id) }}">{{ video.title }}</a></h2>
+            {% if video.poster|length > 0 %}
+            <img src= {{ video.poster.thumbnail_url }} class="img-responsive">
+            {% endif %}
+        </div>
+    </div>
+    {% else %}
+    <em>No videos here so far. Try encoding some videos on <a href="https://dashboard.ingest.io">Ingest Dashboard!</a></em>
+    {% endfor %}
+</div>
+{% endblock %}

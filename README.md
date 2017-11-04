@@ -4,7 +4,7 @@
 
 **Example Ingest client applications using Python/Flask.**
 
-Included are two sample apps using both Client Credentials and Authorization Code Grant (OAuth2) to help quick start development with Ingest's API. Refer to [Ingest's documentation](https://docs.ingest.io) for more information on what else you can do with Ingest!
+Included are two sample apps using both Client Credentials and Authorization Code Grant (OAuth2) to help quick start development with Ingest's API. Refer to [Ingest's documentation](https://github.com/ingest/api-reference) for more information on what else you can do with Ingest!
 
 ## Usage
 
